@@ -25,17 +25,8 @@ for i in range(int(WINDOW_SIZE[0]/50)): # Adds all spawn locations to spawns lis
 player_score = 0
 lives = 3
 
-delta_time = 0
-previous_timeframe = 0
-
 
 while True:
-
-    # Calculating Delta Time or Time Between Frames
-    current_time = pygame.time.get_ticks()
-    delta_time = (current_time - previous_timeframe)/1000
-    previous_timeframe = current_time
-
 
     # Background Filling
     display.fill((0, 0, 0))
